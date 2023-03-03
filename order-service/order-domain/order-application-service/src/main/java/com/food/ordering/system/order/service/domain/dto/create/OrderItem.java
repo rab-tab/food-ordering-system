@@ -21,5 +21,4 @@ public class OrderItem {
     @NotNull
     private final BigDecimal subTotal;
 
-
 }

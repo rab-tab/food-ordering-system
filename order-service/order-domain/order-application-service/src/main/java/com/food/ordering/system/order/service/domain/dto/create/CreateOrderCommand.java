@@ -1,7 +1,7 @@
 package com.food.ordering.system.order.service.domain.dto.create;
 
 
-import com.food.ordering.system.order.service.domain.entity.OrderItem;
+import com.food.ordering.system.order.service.domain.dto.create.OrderItem;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
