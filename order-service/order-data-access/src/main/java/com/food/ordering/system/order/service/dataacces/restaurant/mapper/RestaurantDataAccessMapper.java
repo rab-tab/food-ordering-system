@@ -5,8 +5,9 @@ import com.food.ordering.system.domain.valueobject.ProductId;
 import com.food.ordering.system.domain.valueobject.RestaurantId;
 import com.food.ordering.system.order.service.domain.entity.Product;
 import com.food.ordering.system.order.service.domain.entity.Restaurant;
-import com.food.ordering.system.order.service.dataacces.restaurant.entity.RestaurantEntity;
-import com.food.ordering.system.order.service.dataacces.restaurant.exception.RestaurantDataAccessException;
+import restaurant.entity.RestaurantEntity;
+import restaurant.exception.RestaurantDataAccessException;
+
 
 import java.util.List;
 import java.util.UUID;

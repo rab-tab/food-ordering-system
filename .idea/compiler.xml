@@ -24,6 +24,7 @@
         <module name="restaurant-domain-core" />
         <module name="order-domain-core" />
         <module name="restaurant-application-service" />
+        <module name="common-dataaccess" />
         <module name="restaurant-messaging" />
       </profile>
     </annotationProcessing>
@@ -32,6 +33,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="" />
       <module name="common-application" options="-parameters" />
+      <module name="common-dataaccess" options="-parameters" />
       <module name="common-domain" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="food-ordering-system" options="" />
@@ -52,7 +54,7 @@
       <module name="restaurant-application-service" options="-parameters" />
       <module name="restaurant-container" options="-parameters" />
       <module name="restaurant-dataccess" options="-parameters" />
-      <module name="restaurant-domain" options="" />
+      <module name="restaurant-domain" options="-parameters" />
       <module name="restaurant-domain-core" options="-parameters" />
       <module name="restaurant-messaging" options="-parameters" />
       <module name="restaurant-service" options="" />

@@ -9,9 +9,9 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 //@ComponentScan("com.food.ordering.system.order.service.dataaccess")
-//@EnableJpaRepositories(basePackages = { "com.food.ordering.system.order.service.dataaccess" ,"com.food.ordering.system.dataaccess"})
+@EnableJpaRepositories(basePackages = { "com.food.ordering.system.order.service.dataaccess" ,"com.food.ordering.system.dataaccess"})
 @EntityScan(basePackages = { "com.food.ordering.system.order.service.dataaccess","com.food.ordering.system.dataaccess"})
 @SpringBootApplication(scanBasePackages = "com.food.ordering.system",exclude={DataSourceAutoConfiguration.class})
 public class OrderServiceApplication {
