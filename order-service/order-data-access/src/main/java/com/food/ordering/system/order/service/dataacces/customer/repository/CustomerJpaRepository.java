@@ -1,6 +1,6 @@
-package com.food.ordering.system.service.dataacces.customer.repository;
+package com.food.ordering.system.order.service.dataacces.customer.repository;
 
-import com.food.ordering.system.service.dataacces.customer.entity.CustomerEntity;
+import com.food.ordering.system.order.service.dataacces.customer.entity.CustomerEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

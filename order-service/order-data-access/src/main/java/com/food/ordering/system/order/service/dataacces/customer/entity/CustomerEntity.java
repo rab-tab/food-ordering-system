@@ -1,4 +1,4 @@
-package com.food.ordering.system.service.dataacces.customer.entity;
+package com.food.ordering.system.order.service.dataacces.customer.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

@@ -1,4 +1,4 @@
-package com.food.ordering.system.service.dataacces.order.entity;
+package com.food.ordering.system.order.service.dataacces.order.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

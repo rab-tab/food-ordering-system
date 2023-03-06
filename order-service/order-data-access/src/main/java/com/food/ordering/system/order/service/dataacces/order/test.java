@@ -1,4 +1,4 @@
-package com.food.ordering.system.service.dataacces.order;
+package com.food.ordering.system.order.service.dataacces.order;
 
 public class test {
 }
