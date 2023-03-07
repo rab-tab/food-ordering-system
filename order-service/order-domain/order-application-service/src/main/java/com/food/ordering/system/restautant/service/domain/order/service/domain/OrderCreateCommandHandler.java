@@ -1,5 +1,6 @@
 package com.food.ordering.system.restautant.service.domain.order.service.domain;
 
+import com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.dto.create.CreateOrderCommand;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.dto.create.CreateOrderResponse;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.event.OrderCreatedEvent;
@@ -30,8 +31,8 @@ public class OrderCreateCommandHandler {
     }
 
 
-    public CreateOrderResponse createOrder(CreateOrderCommand createOrderCommand) {
-        OrderCreatedEvent orderCreatedEvent = orderCreateHelper.persistOrder(createOrderCommand);
+    public CreateOrderResponse createOrder(CreateOrderCommand createOrderCommand, DomainEventPublisher<OrderCreatedEvent> orderCreatedEventDomainEventPublisher) {
+        OrderCreatedEvent orderCreatedEvent = orderCreateHelper.persistOrder(createOrderCommand, orderCreatedEventDomainEventPublisher);
         log.info("Order created with id :{} " + orderCreatedEvent.getOrder().getId().getValue());
         orderCreatedPaymentRequestMessagePublisher.publish(orderCreatedEvent);
       //  applicationDomainEventPublisher.publish(orderCreatedEvent);

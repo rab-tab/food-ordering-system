@@ -1,7 +1,9 @@
 package com.food.ordering.system.restautant.service.domain.order.service.domain;
 
+import com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.dto.create.CreateOrderCommand;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.dto.create.CreateOrderResponse;
+import com.food.ordering.system.restautant.service.domain.order.service.domain.event.OrderCreatedEvent;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.ports.input.service.OrderApplicationService;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.track.TrackOrderResponse;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.track.TrackQueryOrder;
@@ -23,8 +25,8 @@ public class OrderApplicationServiceImpl implements OrderApplicationService {
     }
 
     @Override
-    public CreateOrderResponse createOrder(CreateOrderCommand createOrderCommand) {
-        return orderCreateCommandHandler.createOrder(createOrderCommand);
+    public CreateOrderResponse createOrder(CreateOrderCommand createOrderCommand, DomainEventPublisher<OrderCreatedEvent> orderCreatedEventDomainEventPublisher) {
+        return orderCreateCommandHandler.createOrder(createOrderCommand, orderCreatedEventDomainEventPublisher);
     }
 
     @Override

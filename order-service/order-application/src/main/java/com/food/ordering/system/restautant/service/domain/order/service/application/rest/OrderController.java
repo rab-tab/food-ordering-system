@@ -1,7 +1,9 @@
 package com.food.ordering.system.restautant.service.domain.order.service.application.rest;
 
+import com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.dto.create.CreateOrderCommand;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.dto.create.CreateOrderResponse;
+import com.food.ordering.system.restautant.service.domain.order.service.domain.event.OrderCreatedEvent;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.ports.input.service.OrderApplicationService;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.track.TrackOrderResponse;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.track.TrackQueryOrder;
@@ -23,10 +25,10 @@ public class OrderController {
     }
 
     @PostMapping
-    public ResponseEntity<CreateOrderResponse> createOrder(@RequestBody CreateOrderCommand createOrderCommand) {
+    public ResponseEntity<CreateOrderResponse> createOrder(@RequestBody CreateOrderCommand createOrderCommand, DomainEventPublisher<OrderCreatedEvent> orderCreatedEventDomainEventPublisher) {
         log.info("Creating order for customer :{} at restauarnt :{}" + createOrderCommand.getCustomerId(),
                 createOrderCommand.getRestaurantId());
-        CreateOrderResponse createOrderResponse = orderApplicationService.createOrder(createOrderCommand);
+        CreateOrderResponse createOrderResponse = orderApplicationService.createOrder(createOrderCommand, orderCreatedEventDomainEventPublisher);
         log.info("Order created with tracking id :{}", createOrderResponse.getOrderTrackingId());
         return ResponseEntity.ok(createOrderResponse);
 

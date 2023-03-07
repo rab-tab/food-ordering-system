@@ -1,5 +1,6 @@
 package com.food.ordering.system.restautant.service.domain.order.service.domain;
 ;
+import com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
 import com.food.ordering.system.domain.valueobject.*;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.dto.create.CreateOrderCommand;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.dto.create.CreateOrderResponse;
@@ -9,6 +10,7 @@ import com.food.ordering.system.restautant.service.domain.order.service.domain.e
 import com.food.ordering.system.restautant.service.domain.order.service.domain.entity.Order;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.entity.Product;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.entity.Restaurant;
+import com.food.ordering.system.restautant.service.domain.order.service.domain.event.OrderCreatedEvent;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.exception.OrderDomainException;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.mapper.OrderDataMapper;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.ports.input.service.OrderApplicationService;
@@ -127,29 +129,29 @@ public class OrderApplicationServiceTest {
     }
 
     @Test
-    public void testCreateOrder() {
-        CreateOrderResponse createOrderResponse = orderApplicationService.createOrder(createOrderCommand);
+    public void testCreateOrder(DomainEventPublisher<OrderCreatedEvent> orderCreatedEventDomainEventPublisher) {
+        CreateOrderResponse createOrderResponse = orderApplicationService.createOrder(createOrderCommand, orderCreatedEventDomainEventPublisher);
         Assertions.assertEquals(OrderStatus.PENDING, createOrderResponse.getOrderStatus());
         assertEquals("Order created successfully", createOrderResponse.getMessage());
         assertNotNull(createOrderResponse.getOrderTrackingId());
     }
 
     @Test
-    public void testCreateOrderWithWrongTotalPrice() {
+    public void testCreateOrderWithWrongTotalPrice(DomainEventPublisher<OrderCreatedEvent> orderCreatedEventDomainEventPublisher) {
         OrderDomainException orderDomainException = assertThrows(OrderDomainException.class,
-                () -> orderApplicationService.createOrder(createOrderCommandWrongPrice));
+                () -> orderApplicationService.createOrder(createOrderCommandWrongPrice, orderCreatedEventDomainEventPublisher));
         Assertions.assertEquals("Total price: 250.00 is not equal to Order items total: 200.00!", orderDomainException.getMessage());
     }
 
     @Test
-    public void testCreateOrderWithWrongProductPrice() {
+    public void testCreateOrderWithWrongProductPrice(DomainEventPublisher<OrderCreatedEvent> orderCreatedEventDomainEventPublisher) {
         OrderDomainException orderDomainException = assertThrows(OrderDomainException.class,
-                () -> orderApplicationService.createOrder(createOrderCommandWrongProductPrice));
+                () -> orderApplicationService.createOrder(createOrderCommandWrongProductPrice, orderCreatedEventDomainEventPublisher));
         Assertions.assertEquals("Order item price: 60.00 is not valid for product " + PRODUCT_ID, orderDomainException.getMessage());
     }
 
     @Test
-    public void testCreateOrderWithPassiveRestaurant() {
+    public void testCreateOrderWithPassiveRestaurant(DomainEventPublisher<OrderCreatedEvent> orderCreatedEventDomainEventPublisher) {
         Restaurant restaurantResponse = Restaurant.builder()
                 .restaurantId(new RestaurantId(createOrderCommand.getRestaurantId()))
                 .products(List.of(new Product(new ProductId(PRODUCT_ID), "product-1", new Money(new BigDecimal("50.00"))),
@@ -159,7 +161,7 @@ public class OrderApplicationServiceTest {
         when(restaurantRepository.findRestaurantInformation(orderDataMapper.createOrderCommandToRestaurant(createOrderCommand)))
                 .thenReturn(Optional.of(restaurantResponse));
         OrderDomainException orderDomainException = assertThrows(OrderDomainException.class,
-                () -> orderApplicationService.createOrder(createOrderCommand));
+                () -> orderApplicationService.createOrder(createOrderCommand, orderCreatedEventDomainEventPublisher));
         Assertions.assertEquals("Restaurant with id " + RESTAURANT_ID + " is currently not active!", orderDomainException.getMessage());
     }
 
