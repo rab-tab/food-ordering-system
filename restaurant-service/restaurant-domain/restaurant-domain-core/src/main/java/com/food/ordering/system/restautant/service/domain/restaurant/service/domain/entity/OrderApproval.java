@@ -1,9 +1,9 @@
 package com.food.ordering.system.restautant.service.domain.restaurant.service.domain.entity;
 
-import com.food.ordering.system.restautant.service.domain.domain.entity.BaseEntity;
-import com.food.ordering.system.restautant.service.domain.domain.valueobject.OrderApprovalStatus;
-import com.food.ordering.system.restautant.service.domain.domain.valueobject.OrderId;
-import com.food.ordering.system.restautant.service.domain.domain.valueobject.RestaurantId;
+import com.food.ordering.system.domain.entity.BaseEntity;
+import com.food.ordering.system.domain.valueobject.OrderApprovalStatus;
+import com.food.ordering.system.domain.valueobject.OrderId;
+import com.food.ordering.system.domain.valueobject.RestaurantId;
 import com.food.ordering.system.restautant.service.domain.restaurant.service.domain.valueObject.OrderApprovalId;
 
 

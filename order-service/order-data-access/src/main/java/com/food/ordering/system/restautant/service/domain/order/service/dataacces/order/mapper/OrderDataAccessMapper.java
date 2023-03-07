@@ -1,7 +1,6 @@
 package com.food.ordering.system.restautant.service.domain.order.service.dataacces.order.mapper;
 
 import com.food.ordering.system.domain.valueobject.*;
-import com.food.ordering.system.restautant.service.domain.domain.valueobject.*;
 import com.food.ordering.system.restautant.service.domain.order.service.dataacces.order.entity.OrderItemEntity;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.entity.Order;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.entity.OrderItem;

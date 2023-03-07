@@ -1,6 +1,6 @@
 package com.food.ordering.system.restautant.service.domain.order.service.domain.dto.create;
 
-import com.food.ordering.system.restautant.service.domain.domain.valueobject.OrderStatus;
+import com.food.ordering.system.domain.valueobject.OrderStatus;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,7 +1,7 @@
 package com.food.ordering.system.restautant.service.domain.order.service.domain.entity;
 
-import com.food.ordering.system.restautant.service.domain.domain.entity.AggregateRoot;
-import com.food.ordering.system.restautant.service.domain.domain.valueobject.CustomerId;
+import com.food.ordering.system.domain.entity.AggregateRoot;
+import com.food.ordering.system.domain.valueobject.CustomerId;
 
 public class Customer extends AggregateRoot<CustomerId> {
 

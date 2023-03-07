@@ -18,8 +18,14 @@
     <file url="file://$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-service/order-messaging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-service/payment-container/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-service/payment-domain/paymnet-application-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-service/payment-messaging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-service/paymnent-datacess/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/restaurant-service/restaurant-dataccess/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/restaurant-service/restaurant-domain/payment-application-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java" charset="UTF-8" />
