@@ -2,7 +2,7 @@ package com.food.ordering.system.restautant.service.domain.order.service.dataacc
 
 import com.food.ordering.system.restautant.service.domain.order.service.dataacces.restaurant.mapper.RestaurantDataAccessMapper;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.entity.Restaurant;
-import com.food.ordering.system.restautant.service.domain.order.service.domain.ports.output.repository.RestaurantRepository;
+import com.food.ordering.system.order.service.domain.ports.output.repository.RestaurantRepository;
 import restaurant.entity.RestaurantEntity;
 import restaurant.repository.RestaurantJpaRepository;
 
