@@ -1,0 +1,6 @@
+restaurant/entity/RestaurantEntityId.class
+restaurant/entity/RestaurantEntity$RestaurantEntityBuilder.class
+restaurant/entity/RestaurantEntityId$RestaurantEntityIdBuilder.class
+restaurant/exception/RestaurantDataAccessException.class
+restaurant/entity/RestaurantEntity.class
+restaurant/repository/RestaurantJpaRepository.class

@@ -17,7 +17,6 @@
         <module name="paymnet-application-service" />
         <module name="restaurant-container" />
         <module name="order-messaging" />
-        <module name="payment-application-service" />
         <module name="common-domain" />
         <module name="order-application" />
         <module name="restaurant-domain-core" />
@@ -36,6 +35,9 @@
         <module name="restaurant-messaging" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="payment-application-service" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

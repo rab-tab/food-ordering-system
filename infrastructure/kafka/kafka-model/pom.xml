@@ -11,12 +11,12 @@
 
     <artifactId>kafka-model</artifactId>
 
-   <dependencies>
-       <dependency>
-           <groupId>org.apache.avro</groupId>
-           <artifactId>avro</artifactId>
-       </dependency>
-   </dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

@@ -17,18 +17,13 @@
         <module>kafka-model</module>
         <module>kafka-config-data</module>
     </modules>
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
-
     <repositories>
         <repository>
             <id>confluent</id>
-            <url>https://packages.confluent.io/maven</url>
+            <url>https://packages.confluent.io/maven/</url>
         </repository>
     </repositories>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -64,7 +59,6 @@
                 <artifactId>avro</artifactId>
                 <version>${avro.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 </project>

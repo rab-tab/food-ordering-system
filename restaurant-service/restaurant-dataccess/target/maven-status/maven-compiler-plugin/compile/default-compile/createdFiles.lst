@@ -1,0 +1,6 @@
+com/food/ordering/system/restautant/service/domain/restaurant/dataaccess/restaurant/repository/OrderApprovalJpaRepository.class
+com/food/ordering/system/restautant/service/domain/restaurant/dataaccess/restaurant/adapter/RestaurantRepositoryImpl.class
+com/food/ordering/system/restautant/service/domain/restaurant/dataaccess/restaurant/adapter/OrderApprovalRepositoryImpl.class
+com/food/ordering/system/restautant/service/domain/restaurant/dataaccess/restaurant/entity/OrderApprovalEntity$OrderApprovalEntityBuilder.class
+com/food/ordering/system/restautant/service/domain/restaurant/dataaccess/restaurant/entity/OrderApprovalEntity.class
+com/food/ordering/system/restautant/service/domain/restaurant/dataaccess/restaurant/mapper/RestaurantDataAccessMapper.class

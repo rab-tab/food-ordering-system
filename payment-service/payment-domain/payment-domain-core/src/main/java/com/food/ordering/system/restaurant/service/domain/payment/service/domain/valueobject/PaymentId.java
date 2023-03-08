@@ -1,0 +1,11 @@
+package com.food.ordering.system.restaurant.service.domain.payment.service.domain.valueobject;
+
+import com.food.ordering.system.restaurant.service.domain.domain.valueobject.BaseId;
+
+import java.util.UUID;
+
+public class PaymentId extends BaseId<UUID> {
+    public PaymentId(UUID value) {
+        super(value);
+    }
+}

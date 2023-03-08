@@ -1,6 +1,6 @@
-package com.food.ordering.system.restautant.service.domain.restaurant.service.domain.exception;
+package com.food.ordering.system.restaurant.service.domain.exception;
 
-import com.food.ordering.system.domain.exception.DomainException;
+import com.food.ordering.system.restaurant.service.domain.domain.exception.DomainException;
 
 public class RestaurantApplicationServiceException extends DomainException {
     public RestaurantApplicationServiceException(String message) {

@@ -13,6 +13,7 @@
       <set>
         <option value="$PROJECT_DIR$/common-application/pom.xml" />
         <option value="$PROJECT_DIR$/restaurant-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/restaurant-service/restaurant-domain/payment-application-service/pom.xml" />
       </set>
     </option>
   </component>
