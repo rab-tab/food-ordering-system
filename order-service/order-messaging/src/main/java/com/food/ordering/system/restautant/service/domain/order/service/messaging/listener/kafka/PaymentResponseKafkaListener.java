@@ -1,8 +1,8 @@
 package com.food.ordering.system.restautant.service.domain.order.service.messaging.listener.kafka;
 
-import com.food.ordering.system.restautant.service.domain.kafka.consumer.KafkaConsumer;
-import com.food.ordering.system.restautant.service.domain.kafka.order.avro.model.PaymentResponseAvroModel;
-import com.food.ordering.system.restautant.service.domain.kafka.order.avro.model.PaymentStatus;
+import com.food.ordering.system.kafka.consumer.KafkaConsumer;
+import com.food.ordering.system.kafka.order.avro.model.PaymentResponseAvroModel;
+import com.food.ordering.system.kafka.order.avro.model.PaymentStatus;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.ports.input.service.message.listener.payment.PaymentResponseMessageListener;
 import com.food.ordering.system.restautant.service.domain.order.service.messaging.mapper.OrderMessagingDataMapper;
 import lombok.extern.slf4j.Slf4j;

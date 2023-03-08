@@ -1,8 +1,8 @@
 package messaging.publisher.kafka;
 
-import com.food.ordering.system.restautant.service.domain.kafka.order.avro.model.RestaurantApprovalResponseAvroModel;
-import com.food.ordering.system.restautant.service.domain.kafka.producer.KafkaMessageHelper;
-import com.food.ordering.system.restautant.service.domain.kafka.producer.service.KafkaProducer;
+import com.food.ordering.system.kafka.order.avro.model.RestaurantApprovalResponseAvroModel;
+import com.food.ordering.system.kafka.producer.KafkaMessageHelper;
+import com.food.ordering.system.kafka.producer.service.KafkaProducer;
 import com.food.ordering.system.restautant.service.domain.restaurant.service.domain.config.RestaurantServiceConfigData;
 import com.food.ordering.system.restautant.service.domain.restaurant.service.domain.event.OrderApprovedEvent;
 import com.food.ordering.system.restautant.service.domain.restaurant.service.domain.ports.output.message.publisher.OrderApprovedMessagePublisher;

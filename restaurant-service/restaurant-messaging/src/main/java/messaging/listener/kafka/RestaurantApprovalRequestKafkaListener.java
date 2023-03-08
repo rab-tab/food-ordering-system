@@ -1,7 +1,7 @@
 package messaging.listener.kafka;
 
-import com.food.ordering.system.restautant.service.domain.kafka.consumer.KafkaConsumer;
-import com.food.ordering.system.restautant.service.domain.kafka.order.avro.model.RestaurantApprovalRequestAvroModel;
+import com.food.ordering.system.kafka.consumer.KafkaConsumer;
+import com.food.ordering.system.kafka.order.avro.model.RestaurantApprovalRequestAvroModel;
 import com.food.ordering.system.restautant.service.domain.restaurant.service.domain.ports.input.message.listener.RestaurantApprovalRequestMessageListener;
 import lombok.extern.slf4j.Slf4j;
 import messaging.mapper.RestaurantMessagingDataMapper;

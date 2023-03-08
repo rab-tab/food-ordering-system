@@ -2,7 +2,7 @@ package com.food.ordering.system.restautant.service.domain.order.service.messagi
 
 import com.food.ordering.system.domain.valueobject.OrderApprovalStatus;
 import com.food.ordering.system.domain.valueobject.PaymentStatus;
-import com.food.ordering.system.restautant.service.domain.kafka.order.avro.model.*;
+import com.food.ordering.system.kafka.order.avro.model.*;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.dto.message.PaymentResponse;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.dto.message.RestaurantApprovalResponse;
 import com.food.ordering.system.restautant.service.domain.order.service.domain.entity.Order;
