@@ -1,9 +1,9 @@
 package com.food.ordering.system.order.service.domain;
 
 import com.food.ordering.system.order.service.domain.dto.message.RestaurantApprovalResponse;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.event.OrderCancelledEvent;
+import com.food.ordering.system.order.service.domain.event.OrderCancelledEvent;
 import com.food.ordering.system.order.service.domain.ports.input.service.message.listener.restraurantapproval.RestaurantApprovalResponseMessageListener;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.entity.Order;
+import com.food.ordering.system.order.service.domain.entity.Order;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;

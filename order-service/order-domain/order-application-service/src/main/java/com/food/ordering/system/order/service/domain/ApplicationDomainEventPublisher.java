@@ -1,7 +1,7 @@
 package com.food.ordering.system.order.service.domain;
 
-import com.food.ordering.system.restaurant.service.domain.domain.event.publisher.DomainEventPublisher;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.event.OrderCreatedEvent;
+import com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
+import com.food.ordering.system.order.service.domain.event.OrderCreatedEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;

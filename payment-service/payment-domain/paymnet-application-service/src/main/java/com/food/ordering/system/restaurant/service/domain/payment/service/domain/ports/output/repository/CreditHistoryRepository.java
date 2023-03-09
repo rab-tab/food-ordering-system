@@ -1,6 +1,6 @@
 package com.food.ordering.system.restaurant.service.domain.payment.service.domain.ports.output.repository;
 
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.CustomerId;
+import com.food.ordering.system.domain.valueobject.CustomerId;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.entity.CreditHistory;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.food.ordering.system.restaurant.service.domain.payment.service.domain;
 
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.CustomerId;
+import com.food.ordering.system.domain.valueobject.CustomerId;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.dto.PaymentRequest;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.entity.CreditEntry;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.entity.CreditHistory;

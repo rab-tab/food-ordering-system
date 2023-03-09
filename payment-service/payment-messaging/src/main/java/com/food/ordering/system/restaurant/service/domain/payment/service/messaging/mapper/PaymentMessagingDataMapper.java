@@ -1,6 +1,6 @@
 package com.food.ordering.system.restaurant.service.domain.payment.service.messaging.mapper;
 
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.PaymentOrderStatus;
+import com.food.ordering.system.domain.valueobject.PaymentOrderStatus;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.dto.PaymentRequest;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.event.PaymentCancelledEvent;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.event.PaymentCompletedEvent;

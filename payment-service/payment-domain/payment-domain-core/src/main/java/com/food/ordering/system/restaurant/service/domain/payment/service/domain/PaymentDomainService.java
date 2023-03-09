@@ -1,6 +1,6 @@
 package com.food.ordering.system.restaurant.service.domain.payment.service.domain;
 
-import com.food.ordering.system.restaurant.service.domain.domain.event.publisher.DomainEventPublisher;
+import com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.entity.CreditEntry;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.entity.CreditHistory;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.entity.Payment;

@@ -3,10 +3,10 @@ package com.food.ordering.system.restaurant.service.domain.mapper;
 import com.food.ordering.system.restaurant.service.domain.entity.OrderDetail;
 import com.food.ordering.system.restaurant.service.domain.entity.Product;
 import com.food.ordering.system.restaurant.service.domain.entity.Restaurant;
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.Money;
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.OrderId;
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.OrderStatus;
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.RestaurantId;
+import com.food.ordering.system.domain.valueobject.Money;
+import com.food.ordering.system.domain.valueobject.OrderId;
+import com.food.ordering.system.domain.valueobject.OrderStatus;
+import com.food.ordering.system.domain.valueobject.RestaurantId;
 import com.food.ordering.system.restaurant.service.domain.dto.RestaurantApprovalRequest;
 import org.springframework.stereotype.Component;
 

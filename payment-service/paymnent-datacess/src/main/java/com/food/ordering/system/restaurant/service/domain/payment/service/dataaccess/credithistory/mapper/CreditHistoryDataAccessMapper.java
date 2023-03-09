@@ -1,7 +1,7 @@
 package com.food.ordering.system.restaurant.service.domain.payment.service.dataaccess.credithistory.mapper;
 
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.CustomerId;
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.Money;
+import com.food.ordering.system.domain.valueobject.CustomerId;
+import com.food.ordering.system.domain.valueobject.Money;
 import com.food.ordering.system.restaurant.service.domain.payment.service.dataaccess.credithistory.entity.CreditHistoryEntity;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.entity.CreditHistory;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.valueobject.CreditHistoryId;

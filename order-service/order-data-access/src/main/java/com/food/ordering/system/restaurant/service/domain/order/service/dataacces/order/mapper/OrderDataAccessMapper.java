@@ -1,14 +1,13 @@
 package com.food.ordering.system.restaurant.service.domain.order.service.dataacces.order.mapper;
 
 import com.food.ordering.system.domain.valueobject.*;
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.*;
 import com.food.ordering.system.restaurant.service.domain.order.service.dataacces.order.entity.OrderItemEntity;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.entity.Order;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.entity.OrderItem;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.entity.Product;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.valueobject.OrderItemId;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.valueobject.StreetAddress;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.valueobject.TrackingId;
+import com.food.ordering.system.order.service.domain.entity.Order;
+import com.food.ordering.system.order.service.domain.entity.OrderItem;
+import com.food.ordering.system.order.service.domain.entity.Product;
+import com.food.ordering.system.order.service.domain.valueobject.OrderItemId;
+import com.food.ordering.system.order.service.domain.valueobject.StreetAddress;
+import com.food.ordering.system.order.service.domain.valueobject.TrackingId;
 import com.food.ordering.system.restaurant.service.domain.order.service.dataacces.order.entity.OrderAddressEntity;
 import com.food.ordering.system.restaurant.service.domain.order.service.dataacces.order.entity.OrderEntity;
 import org.springframework.stereotype.Component;
@@ -18,7 +17,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.food.ordering.system.restaurant.service.domain.order.service.domain.entity.Order.FAILURE_MESSAGE_DELIMITER;
+import static com.food.ordering.system.order.service.domain.entity.Order.FAILURE_MESSAGE_DELIMITER;
 
 @Component
 public class OrderDataAccessMapper {

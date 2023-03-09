@@ -1,6 +1,6 @@
 package com.food.ordering.system.restaurant.service.domain.payment.service.dataaccess.payment.entity;
 
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.PaymentStatus;
+import com.food.ordering.system.domain.valueobject.PaymentStatus;
 import jakarta.persistence.*;
 import lombok.*;
 

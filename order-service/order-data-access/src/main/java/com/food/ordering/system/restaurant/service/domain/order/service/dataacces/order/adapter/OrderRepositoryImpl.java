@@ -1,9 +1,9 @@
 package com.food.ordering.system.restaurant.service.domain.order.service.dataacces.order.adapter;
 
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.OrderId;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.entity.Order;
+import com.food.ordering.system.domain.valueobject.OrderId;
+import com.food.ordering.system.order.service.domain.entity.Order;
 import com.food.ordering.system.order.service.domain.ports.output.repository.OrderRepository;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.valueobject.TrackingId;
+import com.food.ordering.system.order.service.domain.valueobject.TrackingId;
 import com.food.ordering.system.restaurant.service.domain.order.service.dataacces.order.mapper.OrderDataAccessMapper;
 import com.food.ordering.system.restaurant.service.domain.order.service.dataacces.order.repository.OrderJpaRepository;
 import org.springframework.stereotype.Component;

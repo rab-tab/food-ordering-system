@@ -1,8 +1,8 @@
 package com.food.ordering.system.restaurant.service.domain.payment.service.domain.entity;
 
-import com.food.ordering.system.restaurant.service.domain.domain.entity.BaseEntity;
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.CustomerId;
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.Money;
+import com.food.ordering.system.domain.entity.BaseEntity;
+import com.food.ordering.system.domain.valueobject.CustomerId;
+import com.food.ordering.system.domain.valueobject.Money;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.valueobject.CreditHistoryId;
 import com.food.ordering.system.restaurant.service.domain.payment.service.domain.valueobject.TransactionType;
 

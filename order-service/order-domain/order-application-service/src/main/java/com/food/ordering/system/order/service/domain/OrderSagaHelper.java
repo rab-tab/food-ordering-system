@@ -1,9 +1,9 @@
 package com.food.ordering.system.order.service.domain;
 
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.OrderId;
-import com.food.ordering.system.restaurant.service.domain.domain.valueobject.OrderStatus;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.entity.Order;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.exception.OrderNotFoundException;
+import com.food.ordering.system.domain.valueobject.OrderId;
+import com.food.ordering.system.domain.valueobject.OrderStatus;
+import com.food.ordering.system.order.service.domain.entity.Order;
+import com.food.ordering.system.order.service.domain.exception.OrderNotFoundException;
 import com.food.ordering.system.order.service.domain.ports.output.repository.OrderRepository;
 import com.food.ordering.system.saga.SagaStatus;
 import lombok.extern.slf4j.Slf4j;
