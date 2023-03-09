@@ -1,4 +1,4 @@
-package com.food.ordering.system.restaurant.service.domain.saga;
+package com.food.ordering.system.saga;
 
 public enum SagaStatus {
     STARTED,FAILED ,SUCCEEDED,PROCESSING ,COMPENSATED,COMPENSATING;

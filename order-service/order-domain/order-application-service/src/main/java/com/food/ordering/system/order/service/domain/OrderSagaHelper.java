@@ -5,7 +5,7 @@ import com.food.ordering.system.restaurant.service.domain.domain.valueobject.Ord
 import com.food.ordering.system.restaurant.service.domain.order.service.domain.entity.Order;
 import com.food.ordering.system.restaurant.service.domain.order.service.domain.exception.OrderNotFoundException;
 import com.food.ordering.system.order.service.domain.ports.output.repository.OrderRepository;
-import com.food.ordering.system.restaurant.service.domain.saga.SagaStatus;
+import com.food.ordering.system.saga.SagaStatus;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

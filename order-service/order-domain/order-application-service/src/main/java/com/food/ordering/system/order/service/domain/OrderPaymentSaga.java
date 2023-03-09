@@ -9,7 +9,7 @@ import com.food.ordering.system.restaurant.service.domain.order.service.domain.O
 import com.food.ordering.system.restaurant.service.domain.order.service.domain.entity.Order;
 import com.food.ordering.system.restaurant.service.domain.order.service.domain.event.OrderPaidEvent;
 import com.food.ordering.system.restaurant.service.domain.order.service.domain.exception.OrderNotFoundException;
-import com.food.ordering.system.restaurant.service.domain.saga.SagaStep;
+import com.food.ordering.system.saga.SagaStep;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;

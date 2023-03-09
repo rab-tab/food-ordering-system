@@ -2,7 +2,7 @@ package com.food.ordering.system.order.service.domain.outbox.model.payment;
 
 import com.food.ordering.system.outbox.OutBoxStatus;
 import com.food.ordering.system.restaurant.service.domain.domain.valueobject.OrderStatus;
-import com.food.ordering.system.restaurant.service.domain.saga.SagaStatus;
+import com.food.ordering.system.saga.SagaStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
