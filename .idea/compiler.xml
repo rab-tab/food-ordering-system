@@ -14,6 +14,7 @@
         <module name="payment-messaging" />
         <module name="restaurant-dataccess" />
         <module name="paymnent-datacess" />
+        <module name="outBox" />
         <module name="paymnet-application-service" />
         <module name="restaurant-container" />
         <module name="order-messaging" />
@@ -60,7 +61,8 @@
       <module name="order-domain" options="" />
       <module name="order-domain-core" options="-parameters" />
       <module name="order-messaging" options="-parameters" />
-      <module name="order-service" options="" />
+      <module name="order-service" options="-parameters" />
+      <module name="outBox" options="-parameters" />
       <module name="payment-application-service" options="-parameters" />
       <module name="payment-container" options="-parameters" />
       <module name="payment-domain" options="" />
