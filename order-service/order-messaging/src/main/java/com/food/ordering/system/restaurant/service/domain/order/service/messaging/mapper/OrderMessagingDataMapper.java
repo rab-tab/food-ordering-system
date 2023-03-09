@@ -4,8 +4,8 @@ import com.food.ordering.system.restaurant.service.domain.domain.valueobject.Ord
 import com.food.ordering.system.restaurant.service.domain.domain.valueobject.PaymentStatus;
 import com.food.ordering.system.kafka.order.avro.model.*;
 import com.food.ordering.system.restaurant.service.domain.kafka.order.avro.model.*;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.dto.message.PaymentResponse;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.dto.message.RestaurantApprovalResponse;
+import com.food.ordering.system.order.service.domain.dto.message.PaymentResponse;
+import com.food.ordering.system.order.service.domain.dto.message.RestaurantApprovalResponse;
 import com.food.ordering.system.restaurant.service.domain.order.service.domain.entity.Order;
 import com.food.ordering.system.restaurant.service.domain.order.service.domain.event.OrderCancelledEvent;
 import com.food.ordering.system.restaurant.service.domain.order.service.domain.event.OrderCreatedEvent;

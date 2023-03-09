@@ -3,9 +3,9 @@ package com.food.ordering.system.restaurant.service.domain.order.service.messagi
 import com.food.ordering.system.restaurant.service.domain.kafka.order.avro.model.RestaurantApprovalRequestAvroModel;
 import com.food.ordering.system.restaurant.service.domain.kafka.producer.KafkaMessageHelper;
 import com.food.ordering.system.restaurant.service.domain.kafka.producer.service.KafkaProducer;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.config.OrderServiceConfigData;
+import com.food.ordering.system.order.service.domain.config.OrderServiceConfigData;
 import com.food.ordering.system.restaurant.service.domain.order.service.domain.event.OrderPaidEvent;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.ports.output.repository.message.publisher.restaurantapproval.OrderPaidRestaurantRequestMessagePublisher;
+import com.food.ordering.system.order.service.domain.ports.output.message.publisher.restaurantapproval.OrderPaidRestaurantRequestMessagePublisher;
 import com.food.ordering.system.restaurant.service.domain.order.service.messaging.mapper.OrderMessagingDataMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

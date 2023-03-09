@@ -1,11 +1,11 @@
 package com.food.ordering.system.restaurant.service.domain.order.service.domain;
 
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.ports.output.repository.CustomerRepository;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.ports.output.repository.OrderRepository;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.ports.output.repository.RestaurantRepository;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.ports.output.repository.message.publisher.payment.OrderCancelledPaymentRequestMessagePublisher;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.ports.output.repository.message.publisher.payment.OrderCreatedPaymentRequestMessagePublisher;
-import com.food.ordering.system.restaurant.service.domain.order.service.domain.ports.output.repository.message.publisher.restaurantapproval.OrderPaidRestaurantRequestMessagePublisher;
+import com.food.ordering.system.order.service.domain.ports.output.repository.CustomerRepository;
+import com.food.ordering.system.order.service.domain.ports.output.repository.OrderRepository;
+import com.food.ordering.system.order.service.domain.ports.output.repository.RestaurantRepository;
+import com.food.ordering.system.order.service.domain.ports.output.message.publisher.payment.OrderCancelledPaymentRequestMessagePublisher;
+import com.food.ordering.system.order.service.domain.ports.output.message.publisher.payment.OrderCreatedPaymentRequestMessagePublisher;
+import com.food.ordering.system.order.service.domain.ports.output.message.publisher.restaurantapproval.OrderPaidRestaurantRequestMessagePublisher;
 import org.mockito.Mockito;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
