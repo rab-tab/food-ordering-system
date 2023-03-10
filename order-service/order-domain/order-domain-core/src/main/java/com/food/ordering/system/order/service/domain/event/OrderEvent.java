@@ -21,6 +21,4 @@ public abstract class OrderEvent implements DomainEvent<Order> {
     public ZonedDateTime getCreatedAt() {
         return createdAt;
     }
-
-    public abstract void fire();
 }
