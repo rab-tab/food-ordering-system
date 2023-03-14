@@ -10,9 +10,4 @@ public class OrderPaidEvent extends OrderEvent {
                           ZonedDateTime createdAt) {
         super(order, createdAt);
     }
-
-    @Override
-    public void fire() {
-
-    }
 }

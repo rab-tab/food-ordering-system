@@ -10,8 +10,4 @@ public class OrderCancelledEvent extends OrderEvent {
         super(order, createdAt);
     }
 
-    @Override
-    public void fire() {
-
-    }
 }
